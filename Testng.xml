@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--Native Android Demo App Automation Cases-->
+<suite name="Automation Assessment">
+
+    <test name = "Appium Android">
+        <classes>
+            <class name="testCases.HomeScreen">
+                <methods>
+                    <include name="applicationLaunch"/>
+                </methods>
+            </class>
+            <class name="testCases.WebviewScreen">
+                <methods>
+                    <include name="goToWebviewScreen"/>
+                    <include name="goToGetStartedScreen"/>
+                    <include name="goToGitHubWebPage"/>
+                    <include name="navigateFromWebToApp"/>
+                </methods>
+            </class>
+            <class name="testCases.LoginScreen">
+                <methods>
+                    <include name="goToLoginScreen"/>
+                    <include name="checkValidations"/>
+                    <include name="signup"/>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="testCases.FormsScreen">
+                <methods>
+                    <include name="goToFormsScreen"/>
+                    <include name="checkInputField"/>
+                    <include name="checkSwitch"/>
+                    <include name="selectOptionFromDropdown"/>
+                    <include name="checkButton"/>
+                </methods>
+            </class>
+            <class name="testCases.SwipeScreen">
+                <methods>
+                    <include name="goToSwipeScreen"/>
+                    <include name="swipeHorizontal"/>
+                    <include name="swipeScreenUp"/>
+                </methods>
+            </class>
+            <class name="testCases.DragScreen">
+                <methods>
+                    <include name="goToDragScreen"/>
+                    <include name="completePicture"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
